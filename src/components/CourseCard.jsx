@@ -1,13 +1,12 @@
 // import { Star, BookOpen, Clock, MessageCircle } from "lucide-react";
 import { HiMiniChartBar } from "react-icons/hi2";
 import { IoIosStar } from "react-icons/io";
-import buyer4 from "../assets/buyer/buyer4.png";
 
 function CourseCard({course}) {
   const {title,author,rating,lavel,image,price,tenure,buyer}=course;
   console.log(image)
   return (
-    <div className="w-90 p-3 overflow-hidden rounded-2xl bg-white border-2 border-gray-100">
+    <div className="w-90 p-3 overflow-hidden rounded-2xl bg-white border-2 border-gray-200">
       <div className="relative">
         <img
           src={image}

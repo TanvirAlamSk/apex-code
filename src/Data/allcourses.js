@@ -1,13 +1,4 @@
-import course1 from "../assets/courses/courses1.png";
-import course2 from "../assets/courses/courses 2.png";
-import course3 from "../assets/courses/courses 3.png";
-import course4 from "../assets/courses/courses 4.png";
-import course5 from "../assets/courses/courses 5.png";
-import course6 from "../assets/courses/courses 6.png";
-import buyer1 from "../assets/buyer/buyer1.png";
-import buyer2 from "../assets/buyer/buyer2.png";
-import buyer3 from "../assets/buyer/buyer3.png";
-import buyer4 from "../assets/buyer/buyer4.png";
+
 
 export const courses = [
   {
