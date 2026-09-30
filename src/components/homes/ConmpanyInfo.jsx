@@ -43,7 +43,7 @@ const course = {
 
 function ConmpanyInfo() {
   return (
-    <section className={`00 mt-60 pb-0 ${Layered_radial_gradients}`}>
+    <section className={`00 mt-30 pb-0 ${Layered_radial_gradients}`}>
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 py-30 items-center">
           <div>

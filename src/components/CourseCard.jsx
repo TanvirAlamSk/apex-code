@@ -5,7 +5,7 @@ function CourseCard({course}) {
   const {title,author,rating,lavel,image,price,tenure,buyer}=course;
   console.log(image)
   return (
-    <div className="w-94 p-3 overflow-hidden rounded-2xl bg-white border-2 border-gray-200">
+    <div className=" p-3 overflow-hidden rounded-2xl bg-white border-2 border-gray-200">
       <div className="relative">
         <img
           src={image}

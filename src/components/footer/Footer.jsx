@@ -13,7 +13,7 @@ const legalLinks = ["Privacy Policy", "Terms of Service", "Cookies Settings"];
 function Footer() {
   return (
     <footer className="w-full border-t border-neutral-200 bg-white text-neutral-800">
-      <div className="mx-auto max-w-299 pt-12">
+      <div className="mx-auto max-w-299 pt-15">
         <div className="flex flex-col gap-12 lg:flex-row lg:justify-between">
           {/* Brand + newsletter */}
           <div className="max-w-md px-6">

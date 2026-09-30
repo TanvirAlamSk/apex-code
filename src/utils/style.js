@@ -1,3 +1,3 @@
 export const bg_style="bg-[#003BE2] text-white bg-[length:120px_120px] bg-[linear-gradient(to_right,#1F53E6_1px,transparent_1px),linear-gradient(to_bottom,#1F53E6_1px,transparent_1px)]";
 
-export const Layered_radial_gradients="min-h-screen bg-[#fafafa] bg-[radial-gradient(circle_at_51%_25%,#dcfb62_0%,#eefbb8_15%,transparent_32%),radial-gradient(circle_at_97%_43%,#e2f99a_0%,#f0f8c8_18%,transparent_40%),radial-gradient(circle_at_9%_91%,#bccbf2_0%,#dbe3f7_18%,transparent_38%)]";
+export const Layered_radial_gradients="min-h-screen/2 bg-[#fafafa] bg-[radial-gradient(circle_at_51%_25%,#dcfb62_0%,#eefbb8_15%,transparent_32%),radial-gradient(circle_at_97%_43%,#e2f99a_0%,#f0f8c8_18%,transparent_40%),radial-gradient(circle_at_9%_91%,#bccbf2_0%,#dbe3f7_18%,transparent_38%)]";
