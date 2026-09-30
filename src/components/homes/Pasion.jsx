@@ -21,7 +21,7 @@ const buttons = [
 
 const Pasion = () => {
   return (
-    <div className="mt-18 max-w-248 mx-auto text-center">
+    <div className="mt-18 max-w-250 mx-auto text-center">
       <h2 className="text-3xl font-bold leading-10">
         Discover Your Passion, <br className="hidden md:block"></br> Build Your
         Skills
@@ -32,9 +32,9 @@ const Pasion = () => {
         the arts, and make a difference in your career and life.
       </p>
 
-      <div className="flex flex-wrap gap-x-2 gap-y-4 justify-center items-center mt-10.5">
+      <div className="flex flex-wrap gap-x-3 gap-y-4 justify-center items-center mt-10.5">
         {buttons.map((button, i) => (
-          <button className={`bg-gray-50 py-2 px-4 rounded-3xl text-[14px] text-gray-700 ${i == 0 && "bg-lime-400 text-black"} ${i>=7 &&  "mr-1"}` } key={i}>
+          <button className={`bg-gray-100 py-2 px-4 rounded-3xl text-[14px] text-gray-700 ${i == 0 && "bg-lime-400 text-black"} ${i>=7 &&  "mr-1"}` } key={i}>
             {button}
           </button>
         ))}

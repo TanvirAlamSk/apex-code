@@ -5,9 +5,9 @@ const LIME = "bg-[#C6F500]";
 /* 1. Learning Progress */
 export function LearningProgressCard({ value = 55 }) {
   return (
-    <div className="w-64 bg-white p-4">
+    <div className="w-50 bg-white p-4 rounded-xl text-left">
       <p className="text-sm text-neutral-800">Learning Progress</p>
-      <p className="mt-2 text-5xl font-bold tracking-tight text-neutral-900">
+      <p className="mt-2 text-4xl font-bold tracking-tight text-neutral-900">
         {value}%
       </p>
       <div
@@ -33,9 +33,9 @@ export function CourseTitleCard({
   students = "1000+",
 }) {
   return (
-    <div className="bg-white p-4">
-      <h3 className="text-xl font-semibold text-neutral-900">{title}</h3>
-      <p className="mt-1 flex items-center gap-2 text-sm text-neutral-500">
+    <div className="bg-white px-4 py-3 rounded-xl text-left">
+      <h3 className="text-lg font-semibold text-neutral-900">{title}</h3>
+      <p className="mt-.5 flex items-center gap-2 text-xs text-neutral-500 font-extralight">
         <span>{courses} Courses</span>
         <span className="h-1 w-1 rounded-full bg-neutral-400" />
         <span>{students} Students</span>
@@ -63,13 +63,13 @@ export function HappyStudentsCard({
 }) {
   const items = avatars.length ? avatars : AVATAR_COLORS;
   return (
-    <div className="w-fit bg-white p-4">
+    <div className="w-fit bg-white p-3 rounded-xl text-left">
       <div className="flex items-baseline gap-2">
-        <h3 className="text-xl font-semibold text-neutral-900">
+        <h3 className="text-lg font-semibold text-neutral-900">
           Happy Students
         </h3>
       </div>
-      <p className="mt-0.5 flex items-center gap-1 text-sm text-neutral-800">
+      <p className="mt-0.5 flex items-center text-sm text-neutral-800">
         {rating}
         <span className="text-neutral-400">({reviews})</span>
         <svg
@@ -81,11 +81,11 @@ export function HappyStudentsCard({
         </svg>
       </p>
 
-      <div className="mt-3 flex items-center">
+      <div className="mt-1 flex items-center">
         {items.map((item, i) => (
           <div
             key={i}
-            className={`-ml-3 h-11 w-11 shrink-0 overflow-hidden rounded-full border-2 border-white first:ml-0 ${
+            className={`-ml-3.5 h-10 w-10 shrink-0 overflow-hidden rounded-full border-2 border-white first:ml-0 ${
               typeof item === "string" && item.startsWith("bg-") ? item : "bg-neutral-200"
             }`}
           >
@@ -95,7 +95,7 @@ export function HappyStudentsCard({
           </div>
         ))}
         <div
-          className={`-ml-3 flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${LIME} text-sm font-bold text-neutral-900`}
+          className={`-ml-3.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${LIME} text-sm font-bold text-neutral-900`}
         >
           {extra}
         </div>
@@ -113,7 +113,7 @@ export function TotalRevenueCard({
   progress = 55,
 }) {
   return (
-    <div className="w-72 rounded-2xl bg-[#0F3DE8] p-5 text-white">
+    <div className="w-72 rounded-2xl bg-[#0F3DE8] py-4 px-5 text-white">
       <div className="flex items-start justify-between">
         <div>
           <p className="text-lg font-semibold">{title}</p>
@@ -121,10 +121,10 @@ export function TotalRevenueCard({
         </div>
       </div>
 
-      <div className="mt-3 flex items-center justify-between">
-        <p className="text-4xl font-bold tracking-tight">{amount}</p>
+      <div className="mt-2 flex items-center justify-between">
+        <p className="text-3xl font-bold tracking-tight">{amount}</p>
         <span
-          className={`rounded-xl ${LIME} px-3 py-1.5 text-sm font-semibold text-neutral-900`}
+          className={`rounded-xl ${LIME} px-3 py-1 text-sm font-semibold text-neutral-900`}
         >
           {change}
         </span>
@@ -148,12 +148,12 @@ export function YearToDateCard({
   change = "+12$",
 }) {
   return (
-    <div className="w-44 rounded-2xl bg-[#0F3DE8] p-5 text-white">
+    <div className="w-44 rounded-2xl bg-[#0F3DE8] p-5 text-white mt-8">
       <p className="text-lg font-semibold leading-tight">{title}</p>
       <p className="text-xs text-white/70">{year}</p>
-      <p className="mt-3 text-3xl font-bold tracking-tight">{amount}</p>
+      <p className="mt-2 text-3xl font-bold tracking-tight">{amount}</p>
       <span
-        className={`mt-3 inline-block rounded-xl ${LIME} px-3 py-1.5 text-sm font-semibold text-neutral-900`}
+        className={`mt-2 inline-block rounded-2xl ${LIME} px-3 py-1 text-sm font-md text-neutral-900`}
       >
         {change}
       </span>
