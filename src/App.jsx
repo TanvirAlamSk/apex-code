@@ -1,5 +1,5 @@
-import Container from "./components/common/Container";
 import Banner from "./components/homes/Banner";
+import Courses from "./components/homes/Courses";
 import Pasion from "./components/homes/Pasion";
 import Sponsors from "./components/homes/Sponsors";
 import Navber from "./components/navber/Navber";
@@ -12,6 +12,7 @@ function App() {
       <span></span>
       <Sponsors></Sponsors>
       <Pasion></Pasion>
+      <Courses></Courses>
       <br />
       <br />
       <br />

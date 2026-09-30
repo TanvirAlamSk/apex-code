@@ -9,6 +9,7 @@ import Frame2 from "../../assets/Frame (1).png";
 import Frame3 from "../../assets/Frame (2).png";
 import Ellipse from "../../assets/Ellipse 7.png";
 import person from "../../assets/Image.png";
+import { LearningProgressCard, CourseTitleCard, HappyStudentsCard } from "../common/cards/learning";
 
 const Banner = () => {
   return (
@@ -46,7 +47,7 @@ const Banner = () => {
           <img
             src={Cone2}
             alt="Cone icon"
-            className="absolute top-180 left-4"
+            className="absolute bottom-0 left-0 "
           />
           <img
             src={Cone3}
@@ -66,7 +67,7 @@ const Banner = () => {
           <img
             src={Frame3}
             alt="Frame icon"
-            className="absolute top-170 right-10"
+            className="absolute bottom-10 right-10"
           />
           <img
             src={person}
@@ -74,6 +75,15 @@ const Banner = () => {
             className="absolute left-1/2 -translate-x-1/2 bottom-0"
           />
         </div>
+        <span className="absolute bottom-60 left-1/2 translate-x-1/3 ">
+          <LearningProgressCard ></LearningProgressCard>
+        </span>
+        <span className="absolute bottom-80 right-1/2 -translate-x-5/7 ">
+          <CourseTitleCard></CourseTitleCard>
+        </span>
+        <span className="absolute bottom-16.5 right-1/2 -translate-x-2/3">
+          <HappyStudentsCard></HappyStudentsCard>
+        </span>
       </section>
   );
 };
