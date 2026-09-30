@@ -1,5 +1,6 @@
 import Footer from "./components/footer/Footer";
 import Banner from "./components/homes/Banner";
+import Comments from "./components/homes/Comments";
 import ConmpanyInfo from "./components/homes/ConmpanyInfo";
 import Courses from "./components/homes/Courses";
 import Join from "./components/homes/Join";
@@ -19,6 +20,7 @@ function App() {
       <PathSection></PathSection>
       <ConmpanyInfo></ConmpanyInfo>
       <Join></Join>
+      <Comments></Comments>
       <Footer></Footer>
     </div>
   );
