@@ -13,7 +13,7 @@ import { LearningProgressCard, CourseTitleCard, HappyStudentsCard } from "../com
 
 const Banner = () => {
   return (
-      <section className={`min-h-256 w-full ${bg_style} relative text-center`}>
+      <section className={`min-h-256 w-full ${bg_style} relative text-center pt-30 px-6`}>
         <h1 className="text-6xl leading-18 font-bold  mt-16">
           Get Access to Hundreds <br className="hidden md:block"></br> Courses
           Available

@@ -5,9 +5,9 @@ const LIME = "bg-[#C6F500]";
 /* 1. Learning Progress */
 export function LearningProgressCard({ value = 55 }) {
   return (
-    <div className="w-58 bg-white p-4 rounded-xl text-left">
+    <div className="w-50 bg-white p-4 rounded-xl text-left">
       <p className="text-sm text-neutral-800">Learning Progress</p>
-      <p className="mt-2 text-5xl font-bold tracking-tight text-neutral-900">
+      <p className="mt-2 text-4xl font-bold tracking-tight text-neutral-900">
         {value}%
       </p>
       <div
@@ -63,9 +63,9 @@ export function HappyStudentsCard({
 }) {
   const items = avatars.length ? avatars : AVATAR_COLORS;
   return (
-    <div className="w-fit bg-white p-4 rounded-xl text-left">
+    <div className="w-fit bg-white p-3 rounded-xl text-left">
       <div className="flex items-baseline gap-2">
-        <h3 className="text-xl font-semibold text-neutral-900">
+        <h3 className="text-lg font-semibold text-neutral-900">
           Happy Students
         </h3>
       </div>
@@ -113,7 +113,7 @@ export function TotalRevenueCard({
   progress = 55,
 }) {
   return (
-    <div className="w-72 rounded-2xl bg-[#0F3DE8] p-5 text-white">
+    <div className="w-72 rounded-2xl bg-[#0F3DE8] py-4 px-5 text-white">
       <div className="flex items-start justify-between">
         <div>
           <p className="text-lg font-semibold">{title}</p>
@@ -121,10 +121,10 @@ export function TotalRevenueCard({
         </div>
       </div>
 
-      <div className="mt-3 flex items-center justify-between">
-        <p className="text-4xl font-bold tracking-tight">{amount}</p>
+      <div className="mt-2 flex items-center justify-between">
+        <p className="text-3xl font-bold tracking-tight">{amount}</p>
         <span
-          className={`rounded-xl ${LIME} px-3 py-1.5 text-sm font-semibold text-neutral-900`}
+          className={`rounded-xl ${LIME} px-3 py-1 text-sm font-semibold text-neutral-900`}
         >
           {change}
         </span>
@@ -148,12 +148,12 @@ export function YearToDateCard({
   change = "+12$",
 }) {
   return (
-    <div className="w-44 rounded-2xl bg-[#0F3DE8] p-5 text-white">
+    <div className="w-44 rounded-2xl bg-[#0F3DE8] p-5 text-white mt-8">
       <p className="text-lg font-semibold leading-tight">{title}</p>
       <p className="text-xs text-white/70">{year}</p>
-      <p className="mt-3 text-3xl font-bold tracking-tight">{amount}</p>
+      <p className="mt-2 text-3xl font-bold tracking-tight">{amount}</p>
       <span
-        className={`mt-3 inline-block rounded-xl ${LIME} px-3 py-1.5 text-sm font-semibold text-neutral-900`}
+        className={`mt-2 inline-block rounded-2xl ${LIME} px-3 py-1 text-sm font-md text-neutral-900`}
       >
         {change}
       </span>
