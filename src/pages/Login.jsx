@@ -7,6 +7,7 @@ import conelime from "../assets/Conelime.png";
 import Frame1 from "../assets/Frame (1).png";
 import limecircle from "../assets/limecircle.png";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
+import { Link } from "react-router";
 
 const LIME = "#C6F500";
 const BLUE = "#0F3DE8";
@@ -91,13 +92,16 @@ function LeftSide() {
     <section className="relative hidden h-190 self-start lg:block">
       <Container>
         <div className="absolute left-0 top-0">
-          <Logo />
+          <Link to="/">
+              <Logo />
+            </Link>
         </div>
 
         <div className="absolute left-0 top-17.5">
           <h2 className="text-sm font-semibold">Sign in with ease</h2>
           <p className="mt-2 text-xs text-white/90 lg:pr-30 leading-6">
-            Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge.
+            Experience a seamless and efficient sign-in process that grants you
+            instant access to a world of knowledge.
           </p>
         </div>
 
@@ -212,8 +216,8 @@ function SigninCard() {
           <div className="border-b-2 border-gray-200 w-40"></div>
         </div>
         <div className="flex gap-5 justify-center text-black mt-10">
-          <FaFacebook className="w-15 h-15 p-3.5 rounded-2xl border border-gray-300"/>
-          <FaGoogle className="w-15 h-15 p-3.5 rounded-2xl border border-gray-300"/>
+          <FaFacebook className="w-15 h-15 p-3.5 rounded-2xl border border-gray-300" />
+          <FaGoogle className="w-15 h-15 p-3.5 rounded-2xl border border-gray-300" />
         </div>
       </div>
 
@@ -236,7 +240,9 @@ function Login() {
         <LeftSide />
         <section className="flex flex-col items-center lg:items-end">
           <div className="mb-6 self-start lg:hidden">
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
           <SigninCard />
         </section>

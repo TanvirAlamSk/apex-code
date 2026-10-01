@@ -90,7 +90,9 @@ function LeftSide() {
     <section className="relative hidden h-190 self-start lg:block">
       <Container>
         <div className="absolute left-0 top-0">
-          <Logo />
+          <Link to="/">
+            <Logo />
+          </Link>
         </div>
 
         <div className="absolute left-0 top-17.5">
@@ -234,7 +236,9 @@ export default function Signup() {
         <LeftSide />
         <section className="flex flex-col items-center lg:items-end">
           <div className="mb-6 self-start lg:hidden">
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
           <SignupCard />
         </section>
