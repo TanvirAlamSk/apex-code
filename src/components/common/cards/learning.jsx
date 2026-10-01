@@ -1,5 +1,13 @@
 import React from "react";
 
+import s1 from '../../../assets/students/s1.png'
+import s2 from '../../../assets/students/s2.png'
+import s3 from '../../../assets/students/s3.png'
+import s4 from '../../../assets/students/s4.png'
+import s5 from '../../../assets/students/s5.png'
+import s6 from '../../../assets/students/s6.png'
+import s7 from '../../../assets/students/s7.png'
+
 const LIME = "bg-[#C6F500]";
 
 /* 1. Learning Progress */
@@ -60,10 +68,11 @@ export function HappyStudentsCard({
   reviews = 240,
   avatars = [], // optional: array of image URLs
   extra = "2K+",
+  style="bg-white"
 }) {
-  const items = avatars.length ? avatars : AVATAR_COLORS;
+  const items = [s1,s2,s3,s4,s5,s6,s7];
   return (
-    <div className="w-fit bg-white p-3 rounded-xl text-left">
+    <div className={`w-fit ${style} p-3 rounded-xl text-left`}>
       <div className="flex items-baseline gap-2">
         <h3 className="text-lg font-semibold text-neutral-900">
           Happy Students

@@ -2,6 +2,7 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 import Header_Logo from "../../assets/Header_Logo.png";
 import Container from "../common/Container";
 import { FaBars } from "react-icons/fa6";
+import { Link } from "react-router";
 
 const Navber = () => {
   return (
@@ -13,11 +14,15 @@ const Navber = () => {
         <li>Creators</li>
       </ul>
       <div className="hidden lg:flex gap-6 items-center">
-        <button>Login</button>
-        <button>Join Us</button>
+        <Link to="/login">
+          <button>Login</button>
+        </Link>
+        <Link to="/signup">
+          <button>Join Us</button>
+        </Link>
         <MdOutlineShoppingBag />
       </div>
-      <FaBars className="block lg:hidden"/>
+      <FaBars className="block lg:hidden" />
     </nav>
   );
 };

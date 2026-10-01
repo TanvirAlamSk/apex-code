@@ -1,29 +1,11 @@
+import { createBrowserRouter, RouterProvider } from "react-router";
 import Footer from "./components/footer/Footer";
-import Banner from "./components/homes/Banner";
-import Comments from "./components/homes/Comments";
-import ConmpanyInfo from "./components/homes/ConmpanyInfo";
-import Courses from "./components/homes/Courses";
-import Join from "./components/homes/Join";
-import Pasion from "./components/homes/Pasion";
-import PathSection from "./components/homes/PathSection";
-import Sponsors from "./components/homes/Sponsors";
 import Navber from "./components/navber/Navber";
+import Home from "./pages/Home";
+import { routes } from "./routers/routes";
 
 function App() {
-  return (
-    <div className="">
-      <Navber></Navber>
-      <Banner></Banner>
-      <Sponsors></Sponsors>
-      <Pasion></Pasion>
-      <Courses></Courses>
-      <PathSection></PathSection>
-      <ConmpanyInfo></ConmpanyInfo>
-      <Join></Join>
-      <Comments></Comments>
-      <Footer></Footer>
-    </div>
-  );
+  return <RouterProvider router={routes}></RouterProvider>;
 }
 
 export default App;

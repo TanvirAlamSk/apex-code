@@ -55,9 +55,9 @@ const PathSection = () => {
           carefully curated categories.
         </p>
 
-        <figure className="mt-17 flex flex-wrap gap-5 justify-between px-6">
+        <figure className="mt-17 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  gap-5 px-6">
           {sectors.map((sector) => (
-            <span key={sector.id} className="w-40 h-40 border-2 border-gray-200 rounded-2xl flex flex-col items-center justify-center">
+            <span key={sector.id} className="w-40 mx-auto h-40 border-2 border-gray-200 rounded-2xl flex flex-col items-center justify-center">
               {sector.icon}
               <p className="text-[14px] mt-2">{sector.name}</p>
             </span>
