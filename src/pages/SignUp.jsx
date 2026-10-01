@@ -6,6 +6,7 @@ import CourseCard from "../components/CourseCard";
 import conelime from "../assets/Conelime.png";
 import Frame1 from "../assets/Frame (1).png";
 import limecircle from "../assets/limecircle.png";
+import { Link } from "react-router";
 
 const LIME = "#C6F500";
 const BLUE = "#0F3DE8";
