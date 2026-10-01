@@ -43,7 +43,7 @@ const course = {
 
 function ConmpanyInfo() {
   return (
-    <section className={`00 mt-30 pb-0 ${Layered_radial_gradients}`}>
+    <section className={`00 mt-30 pb-0 px-4 ${Layered_radial_gradients}`}>
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 py-30 items-center">
           <div>
@@ -80,7 +80,7 @@ function ConmpanyInfo() {
               alt="A smiling person"
               className="absolute top-15 right-"
             />
-            <span className="absolute top-48 right-15">
+            <span className="absolute top-48 right-15 hidden md:block">
               <LearningProgressCard></LearningProgressCard>
             </span>
             <img
@@ -90,18 +90,18 @@ function ConmpanyInfo() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-20 pt-15 pb-80 items-center ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 pt-15 pb-30 md:pb-80 lg:items-center ">
           <div className="relative">
             <TotalRevenueCard></TotalRevenueCard>
             <YearToDateCard></YearToDateCard>
 
-            <img src={women} alt="women" className="absolute -top-10 left-13" />
+            <img src={women} alt="women" className="absolute w-100 md:w-full -top-10 left-40 md:left-13" />
             <img
               src={limeRing}
               alt="a lime color lime"
-              className="absolute top-15 right-5 rotate-45"
+              className="absolute top-15 right-5 rotate-45 hidden md:block"
             />
-            <span className="absolute -bottom-30 right-0">
+            <span className="absolute -bottom-30 right-0 hidden md:block">
               <HappyStudentsCard></HappyStudentsCard>
             </span>
           </div>

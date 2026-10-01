@@ -3,9 +3,8 @@ import { IoIosStar } from "react-icons/io";
 
 function CourseCard({course}) {
   const {title,author,rating,lavel,image,price,tenure,buyer}=course;
-  console.log(image)
   return (
-    <div className=" p-3 overflow-hidden rounded-2xl bg-white border-2 border-gray-200">
+    <div className=" p-3 lg:w-88 overflow-hidden rounded-2xl bg-white border-2 border-gray-200">
       <div className="relative">
         <img
           src={image}
@@ -14,7 +13,7 @@ function CourseCard({course}) {
         />
 
         <div className="absolute bottom-3 left-3 right-3 flex items-center gap-2 text-xs text-black font-extralight">
-          <div className="flex items-center rounded-full bg-gray-100/50 px-2.5 py-1 backdrop-blur-sm">
+          <div className="flex items-center rounded-full bg-gray-100/50 px-2 py-1 backdrop-blur-sm">
             <span>17 Lessons</span>
           </div>
 
@@ -22,7 +21,7 @@ function CourseCard({course}) {
             <span>2 hours 16 mins</span>
           </div>
 
-          <div className="flex items-center rounded-full bg-gray-100/50 px-2.5 py-1 backdrop-blur-sm">
+          <div className="flex items-center rounded-full bg-gray-100/50 px-2 py-1 backdrop-blur-sm">
             <span>59 Comments</span>
           </div>
         </div>
@@ -39,7 +38,7 @@ function CourseCard({course}) {
           </div>
         </div>
 
-        <p className="mb-3 text-xs ">
+        <p className="mb-3 text-xs text-gray-500">
           by <span className="text-blue-700">{author}</span>{" "}
         </p>
 

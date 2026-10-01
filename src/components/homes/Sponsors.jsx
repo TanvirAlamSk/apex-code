@@ -9,7 +9,7 @@ const Sponsors = () => {
   return (
     <div className="bg-gray-50">
       <Container>
-        <div className="flex justify-between  gap-3 flex-wrap py-20 px-4">
+        <div className="flex justify-between gap-3 flex-wrap py-20 px-4">
           <img src={company1} alt="company logo" />
           <img src={company2} alt="company logo" />
           <img src={company3} alt="company logo" />

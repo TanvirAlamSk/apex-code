@@ -13,7 +13,7 @@ import { LearningProgressCard, CourseTitleCard, HappyStudentsCard } from "../com
 
 const Banner = () => {
   return (
-      <section className={`min-h-256 w-full ${bg_style} relative text-center pt-30 px-6`}>
+      <section className={`min-h-256 w-full ${bg_style} relative text-center pt-30 px-6 overflow-hidden`}>
         <h1 className="text-6xl leading-18 font-bold  mt-16">
           Get Access to Hundreds <br className="hidden md:block"></br> Courses
           Available
@@ -33,11 +33,11 @@ const Banner = () => {
             Search
           </button>
         </div>
-        <div className="overflow-hidden pointer-events-none">
+        <div className="overflow-hidden">
           <img
             src={Cone1}
             alt="Cone icon"
-            className="absolute top-118 right-36"
+            className="absolute top-118 right-36 hidden md:block"
           />
           <img
             src={Ellipse}
@@ -47,41 +47,41 @@ const Banner = () => {
           <img
             src={Cone2}
             alt="Cone icon"
-            className="absolute bottom-0 left-0 "
+            className="absolute bottom-0 left-0 hidden md:block"
           />
           <img
             src={Cone3}
             alt="Cone icon"
-            className="absolute top-55 right-0"
+            className="absolute top-55 right-0 hidden md:block"
           />
           <img
             src={Frame1}
             alt="Frame icon"
-            className="absolute top-58 left-0"
+            className="absolute top-58 left-0 hidden md:block"
           />
           <img
             src={Frame2}
             alt="Frame icon"
-            className="absolute top-120 left-45"
+            className="absolute top-120 left-45 hidden md:block"
           />
           <img
             src={Frame3}
             alt="Frame icon"
-            className="absolute bottom-10 right-10"
+            className="absolute bottom-10 right-10 hidden md:block"
           />
           <img
             src={person}
             alt="Frame icon"
-            className="absolute left-1/2 -translate-x-1/2 bottom-0"
+            className="absolute left-1/2 -translate-x-1/2 -bottom-6 md:bottom-0"
           />
         </div>
-        <span className="absolute bottom-60 left-1/2 translate-x-1/3 ">
+        <span className="absolute bottom-60 left-1/2 translate-x-1/3 hidden">
           <LearningProgressCard ></LearningProgressCard>
         </span>
-        <span className="absolute bottom-80 right-1/2 -translate-x-5/7 ">
+        <span className="absolute bottom-80 right-1/2 -translate-x-5/7 hidden">
           <CourseTitleCard></CourseTitleCard>
         </span>
-        <span className="absolute bottom-16.5 right-1/2 -translate-x-2/3">
+        <span className="absolute bottom-16.5 right-1/2 -translate-x-2/3 hidden">
           <HappyStudentsCard></HappyStudentsCard>
         </span>
       </section>
