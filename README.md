@@ -2,7 +2,7 @@
 
 A modern, high-performance web application built using **React** and **Vite**. This project features an interactive **Home Page**, a **Sign In** page, and a **Sign Up** page, optimized for speed and seamless user experience.
 
-🌐 **Live Demo:** [https://apex-code-three.vercel.app/](apex-code)
+🌐 **Live Demo:** [Apex-Code](https://apex-code-three.vercel.app/)
 
 ---
 
